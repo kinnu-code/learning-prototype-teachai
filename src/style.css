@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Zilla+Slab:wght@400;500;600;700&display=swap");
+@import "tailwindcss";
+
+/* ── Typography ──────────────────────────────────────────── */
+@theme {
+  --font-header: "Zilla Slab", serif;
+  --font-body: "Figtree", sans-serif;
+}
+
+@utility text-h40 { font-family: var(--font-header); font-size: 40px; line-height: 46px; }
+@utility text-h34 { font-family: var(--font-header); font-size: 34px; line-height: 42px; }
+@utility text-h28 { font-family: var(--font-header); font-size: 28px; line-height: 34px; }
+@utility text-h22 { font-family: var(--font-header); font-size: 22px; line-height: 26px; }
+@utility text-h20 { font-family: var(--font-header); font-size: 20px; line-height: 26px; }
+@utility text-h16 { font-family: var(--font-header); font-size: 16px; line-height: 22px; }
+
+@utility text-p20 { font-family: var(--font-body); font-size: 20px; line-height: 26px; }
+@utility text-p16 { font-family: var(--font-body); font-size: 16px; line-height: 22px; }
+@utility text-p14 { font-family: var(--font-body); font-size: 14px; line-height: 20px; }
+@utility text-p12 { font-family: var(--font-body); font-size: 12px; line-height: 16px; }
+@utility text-p10 { font-family: var(--font-body); font-size: 10px; line-height: 14px; }
+
+/* ── Color tokens ────────────────────────────────────────── */
+@theme static {
+  --color-section-divider: rgba(0, 0, 0, 0.15);
+
+  --color-ui-orange-500: #F2A900;
+  --color-ui-yellow-500: #D1B736;
+  --color-ui-green-500: #3EA685;
+  --color-ui-red-500: #E15262;
+
+  --color-success: #3EA685;
+  --color-warning: #E98E0D;
+  --color-error: #E15262;
+
+  --color-ui-kinnu-lite-500: #DE8A7C;
+  --color-ui-kinnu-pro-500: #70B4BF;
+
+  --color-gray-100: #F7F7F7;
+  --color-gray-200: #EBEBEB;
+  --color-gray-300: #DDDDDD;
+  --color-gray-400: #B2B2B2;
+  --color-gray-600: #666666;
+
+  --color-beige-100: #FFFAF2;
+  --color-beige-200: #F1ECE0;
+  --color-beige-300: #C6BFB1;
+  --color-beige-500: #AEA390;
+  --color-beige-700: #877555;
+
+  --color-blue-100: #EBFBFF;
+  --color-blue-500: #79B8C8;
+  --color-blue-700: #287B90;
+
+  --color-pink-100: #FFF3F2;
+  --color-pink-500: #D1938C;
+  --color-pink-700: #A85951;
+
+  --color-green-100: #F0FCEB;
+  --color-green-500: #8BB47B;
+  --color-green-700: #49912D;
+
+  --color-purple-100: #F0F6FF;
+  --color-purple-500: #91A8D5;
+  --color-purple-700: #445B8A;
+
+  --color-prepscore-500: #51A1AE;
+}
+
+@theme static {
+  --color-subscription-500: var(--color-ui-kinnu-pro-500);
+  --color-ui-due-500: var(--color-ui-orange-500);
+
+  --color-correct: var(--color-ui-green-500);
+  --color-incorrect: var(--color-ui-red-500);
+
+  --color-learn-100: var(--color-blue-100);
+  --color-learn-500: var(--color-blue-500);
+  --color-learn-700: var(--color-blue-700);
+
+  --color-practise-100: var(--color-pink-100);
+  --color-practise-500: var(--color-pink-500);
+  --color-practise-700: var(--color-pink-700);
+
+  --color-memorise-100: var(--color-green-100);
+  --color-memorise-500: var(--color-green-500);
+  --color-memorise-700: var(--color-green-700);
+  --color-ui-memorise: var(--color-green-700);
+
+  --color-mock-exam-100: var(--color-purple-100);
+  --color-mock-exam-500: var(--color-purple-500);
+  --color-mock-exam-700: var(--color-purple-700);
+
+  --color-stats-good: var(--color-ui-green-500);
+  --color-stats-medium: var(--color-ui-yellow-500);
+  --color-stats-bad: var(--color-ui-red-500);
+
+  --color-easy-500: var(--color-ui-green-500);
+  --color-medium-500: var(--color-ui-yellow-500);
+  --color-hard-500: var(--color-ui-red-500);
+}
+
+/* ── Raster utilities ────────────────────────────────────── */
+@utility raster-light {
+  background-image: url(/raster_40x40.png);
+  background-size: 20px 20px;
+}
+
+@utility raster-light-subtle {
+  background-image: url(/raster_40x40_30.png);
+  background-size: 20px 20px;
+}
+
+@utility raster-dark {
+  background-image: url(/raster_onblack_40x40.png);
+  background-size: 20px 20px;
+}
+
+/* ── Base ────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body, #app {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: var(--font-body);
+}
