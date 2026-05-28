@@ -1,5 +1,5 @@
 <template>
-  <div class="h-screen flex overflow-hidden bg-beige-100 raster-light">
+  <div class="h-screen flex overflow-hidden bg-white raster-light-subtle">
     <!-- Reading Panel (65%) -->
     <div class="flex-1 flex flex-col overflow-hidden border-r border-beige-300">
       <ReadingPanel />

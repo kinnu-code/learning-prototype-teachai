@@ -43,7 +43,7 @@
     <!-- Phase 3: Teach (reading panel shows dimmed reference) -->
     <template v-else-if="store.phase === 3">
       <!-- Sticky header -->
-      <div class="sticky top-0 z-10 bg-beige-100/90 backdrop-blur-sm border-b border-beige-300 -mx-10 px-10 py-3 mb-6">
+      <div class="sticky top-0 z-10 bg-white/90 backdrop-blur-sm border-b border-gray-200 -mx-10 px-10 py-3 mb-6">
         <p class="text-p14 text-beige-500">
           📖 Reference text — use the chat to teach the rubber duck everything about this topic.
         </p>
@@ -114,19 +114,19 @@ watch(() => store.phase, () => {
 .skim-content :deep(h4),
 .skim-content :deep(h5),
 .skim-content :deep(h6) {
-  color: #287B90;
+  color: #111111;
 }
 
 /* Prose base styles */
 :deep(.prose) {
-  color: #877555;
+  color: #111111;
   font-family: var(--font-body);
 }
 :deep(.prose h1) {
   font-family: var(--font-header);
   font-size: 28px;
   line-height: 34px;
-  color: #287B90;
+  color: #111111;
   margin-top: 2rem;
   margin-bottom: 0.75rem;
 }
@@ -134,7 +134,7 @@ watch(() => store.phase, () => {
   font-family: var(--font-header);
   font-size: 22px;
   line-height: 26px;
-  color: #287B90;
+  color: #111111;
   margin-top: 1.75rem;
   margin-bottom: 0.5rem;
 }
@@ -142,7 +142,7 @@ watch(() => store.phase, () => {
   font-family: var(--font-header);
   font-size: 18px;
   line-height: 24px;
-  color: #287B90;
+  color: #111111;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
@@ -161,9 +161,9 @@ watch(() => store.phase, () => {
   margin-bottom: 0.25rem;
 }
 :deep(.prose blockquote) {
-  border-left: 3px solid #79B8C8;
+  border-left: 3px solid #111111;
   padding-left: 1rem;
-  color: #AEA390;
+  color: #444444;
   font-style: italic;
   margin: 1rem 0;
 }
@@ -173,8 +173,8 @@ watch(() => store.phase, () => {
   margin-bottom: 1.25rem;
 }
 :deep(.prose th) {
-  background: #EBFBFF;
-  color: #287B90;
+  background: #f5f5f5;
+  color: #111111;
   font-family: var(--font-header);
   padding: 8px 12px;
   text-align: left;
@@ -184,13 +184,14 @@ watch(() => store.phase, () => {
   padding: 8px 12px;
   border: 1px solid #DDDDDD;
   font-size: 14px;
+  color: #111111;
 }
 :deep(.prose strong) {
-  color: #287B90;
+  color: #111111;
   font-weight: 600;
 }
 :deep(.prose code) {
-  background: #F1ECE0;
+  background: #f0f0f0;
   padding: 2px 6px;
   border-radius: 4px;
   font-size: 14px;
