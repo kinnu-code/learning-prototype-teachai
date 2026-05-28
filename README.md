@@ -1,5 +1,4 @@
-# Vue 3 + Vite
-
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
-
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+# Learning prototypes experiments: Skimming + teach the AI
+This prototype explores two ideas
+1- skimming before reading to activate prior knowledge, prime the brain for what to come next, and raise questions about the topic
+2- Teaching the AI. The AI acts as the rubber duck that you need to explain to. It shows a progress bar of the knowledge gained (based on a list of key concepts covered in the topic) and once the AI leans about all the key concepts, it moves to the next 'practice' stage (practice is not implemented, just a place holder)
