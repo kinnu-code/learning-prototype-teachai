@@ -105,10 +105,16 @@ watch(() => store.phase, () => {
   color: #287B90;
   font-weight: 600;
 }
-/* strong inside dimmed paragraphs should also highlight if tagged, otherwise stay dim */
+/* Bold text and all heading levels are fully undimmed */
 .skim-content :deep(p strong),
-.skim-content :deep(li strong) {
-  color: rgba(40, 123, 144, 0.35);
+.skim-content :deep(li strong),
+.skim-content :deep(h1),
+.skim-content :deep(h2),
+.skim-content :deep(h3),
+.skim-content :deep(h4),
+.skim-content :deep(h5),
+.skim-content :deep(h6) {
+  color: #287B90;
 }
 
 /* Prose base styles */
